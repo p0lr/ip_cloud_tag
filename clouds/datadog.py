@@ -5,7 +5,7 @@ from ipaddress import ip_network
 
 class datadog:
     """
-    Zscaler IP range handler. Fetches, parses, and builds Zscaler IP range entries.
+    IP range handler. Fetches, parses, and buildsIP range entries.
     """
 
     def __init__(self):

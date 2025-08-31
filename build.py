@@ -112,6 +112,13 @@ def main():
     if salesforce_ip_ranges:
         print(f"Retrieved {len(salesforce_ip_ranges)} Salesforce IP ranges.")
         cloud_ranges.extend(salesforce_ip_ranges)
+    
+    from clouds.zendesk import zendesk
+    zendesk_ips = zendesk()
+    zendesk_ip_ranges = zendesk_ips.ip_ranges
+    if zendesk_ip_ranges:
+        print(f"Retrieved {len(zendesk_ip_ranges)} Zendesk IP ranges.")
+        cloud_ranges.extend(zendesk_ip_ranges)
 
     from clouds.zscaler import zscaler
     zscaler_ips = zscaler()
