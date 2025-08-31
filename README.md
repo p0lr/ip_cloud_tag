@@ -42,6 +42,8 @@ To add a new provider, write a module to parse its published IP address ranges i
   * https://api.fastly.com/public-ip-list
 * GCP (Google Cloud Platform)
   * https://www.gstatic.com/ipranges/cloud.json
+* GitHub
+  * https://api.github.com/meta
 * Imperva
   * https://my.imperva.com/api/integration/v1/ips
 * Linode

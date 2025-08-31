@@ -77,6 +77,13 @@ def main():
     if gcp_ip_ranges:
         print(f"Retrieved {len(gcp_ip_ranges)} GCP IP ranges.")
         cloud_ranges.extend(gcp_ip_ranges)
+    
+    from clouds.github import github
+    github_ips = github()
+    github_ip_ranges = github_ips.ip_ranges
+    if github_ip_ranges:
+        print(f"Retrieved {len(github_ip_ranges)} GitHub IP ranges.")
+        cloud_ranges.extend(github_ip_ranges)
 
     from clouds.imperva import imperva
     imperva_ips = imperva()
