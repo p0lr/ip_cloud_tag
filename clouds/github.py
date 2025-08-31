@@ -58,7 +58,7 @@ class github:
                         network = None
                     if network:
                         entry = {
-                            "Provider": "Zscaler",
+                            "Provider": "GitHub",
                             "Service": service,
                             "Start": int(network.network_address),
                             "End": int(network.broadcast_address)
