@@ -22,45 +22,24 @@ To add a new provider, write a module to parse its published IP address ranges i
 ## Current Providers and Sources
 
 * Atlassian
-  * https://ip-ranges.atlassian.com/
 * AWS (Amazon Web Services)
-  * https://ip-ranges.amazonaws.com/ip-ranges.json
 * Azure
-  * Ths URL rotates.  The code finds and utilizes the current latest download link.
 * Cachefly
-  * https://cachefly.cachefly.net/ips/cdn.txt
 * Cloudflare
-  * https://www.cloudflare.com/ips-v4
-  * https://www.cloudflare.com/ips-v6/
 * Datadog
-  * https://ip-ranges.datadoghq.com/
 * DigitalOcean
-  * https://digitalocean.com/geo/google.csv
 * Exoscale
-  * https://exoscale-prefixes.sos-ch-dk-2.exo.io/exoscale_prefixes.json
 * Fastly
-  * https://api.fastly.com/public-ip-list
 * Fortanix
-  * https://ip-ranges.fortanix.com/ip-ranges
 * GCP (Google Cloud Platform)
-  * https://www.gstatic.com/ipranges/cloud.json
 * GitHub
-  * https://api.github.com/meta
+* Google Workspace
 * Imperva
-  * https://my.imperva.com/api/integration/v1/ips
 * Linode
-  * https://geoip.linode.com/
 * Microsoft365
-  * https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7
 * OCI (Oracle Cloud Infrastructure)
-  * https://docs.oracle.com/en-us/iaas/tools/public_ip_ranges.json
 * Okta
-  * https://s3.amazonaws.com/okta-ip-ranges/ip_ranges.json
 * Salesforce - Hyperforce
-  * https://ip-ranges.salesforce.com/ip-ranges.json
+* Vultr
 * Zendesk
-  * Static IP range - 216.198.0.0/18
 * Zscaler
-  * https://config.zscaler.com/api/zscalerthree.net/cenr/json
-  * https://config.zscaler.com/api/zscalertwo.net/cenr/json
-  * https://config.zscaler.com/api/zscalerone.net/cenr/json
