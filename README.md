@@ -50,6 +50,8 @@ To add a new provider, write a module to parse its published IP address ranges i
   * https://my.imperva.com/api/integration/v1/ips
 * Linode
   * https://geoip.linode.com/
+* Microsoft365
+  * https://endpoints.office.com/endpoints/worldwide?clientrequestid=b10c5ed1-bad1-445f-b386-b919946339a7
 * OCI (Oracle Cloud Infrastructure)
   * https://docs.oracle.com/en-us/iaas/tools/public_ip_ranges.json
 * Okta

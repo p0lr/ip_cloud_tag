@@ -112,6 +112,13 @@ def main():
     if linode_ip_ranges:
         print(f"Retrieved {len(linode_ip_ranges)} Linode IP ranges.")
         cloud_ranges.extend(linode_ip_ranges)
+    
+    from clouds.microsoft365 import microsoft365
+    microsoft365_ips = microsoft365()
+    microsoft365_ip_ranges = microsoft365_ips.ip_ranges
+    if microsoft365_ip_ranges:
+        print(f"Retrieved {len(microsoft365_ip_ranges)} Microsoft 365 IP ranges.")
+        cloud_ranges.extend(microsoft365_ip_ranges)
 
     from clouds.oci import oci
     oci_ips = oci()
