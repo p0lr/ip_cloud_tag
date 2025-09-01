@@ -70,6 +70,13 @@ def main():
     if fastly_ip_ranges:
         print(f"Retrieved {len(fastly_ip_ranges)} Fastly IP ranges.")
         cloud_ranges.extend(fastly_ip_ranges)
+    
+    from clouds.fortanix import fortanix
+    fortanix_ips = fortanix()
+    fortanix_ip_ranges = fortanix_ips.ip_ranges
+    if fortanix_ip_ranges:
+        print(f"Retrieved {len(fortanix_ip_ranges)} Fortanix IP ranges.")
+        cloud_ranges.extend(fortanix_ip_ranges)
 
     from clouds.gcp import gcp
     gcp_ips = gcp()
