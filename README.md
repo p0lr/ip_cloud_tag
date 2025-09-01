@@ -40,6 +40,8 @@ To add a new provider, write a module to parse its published IP address ranges i
   * https://exoscale-prefixes.sos-ch-dk-2.exo.io/exoscale_prefixes.json
 * Fastly
   * https://api.fastly.com/public-ip-list
+* Fortanix
+  * https://ip-ranges.fortanix.com/ip-ranges
 * GCP (Google Cloud Platform)
   * https://www.gstatic.com/ipranges/cloud.json
 * GitHub
