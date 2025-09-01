@@ -91,6 +91,13 @@ def main():
     if github_ip_ranges:
         print(f"Retrieved {len(github_ip_ranges)} GitHub IP ranges.")
         cloud_ranges.extend(github_ip_ranges)
+    
+    from clouds.google_workspace import google_workspace
+    google_workspace_ips = google_workspace()
+    google_workspace_ip_ranges = google_workspace_ips.ip_ranges
+    if google_workspace_ip_ranges:
+        print(f"Retrieved {len(google_workspace_ip_ranges)} Google Workspace IP ranges.")
+        cloud_ranges.extend(google_workspace_ip_ranges)
 
     from clouds.imperva import imperva
     imperva_ips = imperva()
