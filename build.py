@@ -141,6 +141,13 @@ def main():
         print(f"Retrieved {len(salesforce_ip_ranges)} Salesforce IP ranges.")
         cloud_ranges.extend(salesforce_ip_ranges)
     
+    from clouds.vultr import vultr
+    vultr_ips = vultr()
+    vultr_ip_ranges = vultr_ips.ip_ranges
+    if vultr_ip_ranges:
+        print(f"Retrieved {len(vultr_ip_ranges)} Vultr IP ranges.")
+        cloud_ranges.extend(vultr_ip_ranges)
+
     from clouds.zendesk import zendesk
     zendesk_ips = zendesk()
     zendesk_ip_ranges = zendesk_ips.ip_ranges

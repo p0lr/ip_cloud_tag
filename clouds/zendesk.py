@@ -1,5 +1,3 @@
-from urllib.request import urlopen
-import json
 from ipaddress import ip_network
 
 
